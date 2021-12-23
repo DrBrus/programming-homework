@@ -20,8 +20,8 @@ int main (int argc, char* argv[]) {
         }
 
         for (int j = 1; j <= (2 * R); ++i) {
-            int x = 0;
-            int y = 0;
+            int x = 1;
+            int y = 1;
 
             if (j > R) {
                 flagX = 0;
@@ -41,7 +41,7 @@ int main (int argc, char* argv[]) {
                 y = i;
             }
 
-            if (arr[x + (y - 1) * R] == 1) {
+            if (arr[(x - 1) + (y - 1) * R] == 1) {
                 std::cout << "*";
             } else {
                 std::cout << " ";
